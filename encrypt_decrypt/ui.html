@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encrypt/Decrypt Text</title>
+  <link rel="stylesheet" href="design.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+  <h1>Symbolic Cipher <button id="mode-toggle"></button></h1>
+
+  <div class="encrypt">
+    <h2>Encrypt Text</h2>
+    <div class="input-with-button">
+      <input class="e" type="text" placeholder="Enter Text">  
+      <button id="start-speech-recognition" class="button">
+        <i class="fas fa-microphone"></i>
+      </button>
+    </div>
+    <button id="encrypt-btn">Encrypt</button>
+    <span class="encrypted-text">Encrypted text ...</span>
+    <button class="copy-btn" data-copy-target=".encrypted-text">
+      <i class="fas fa-copy"></i> Copy
+    </button>
+  </div>
+
+  <div class="decrypt">
+    <h2>Decrypt Text</h2>
+    <input class="d" type="text" placeholder="Enter Text">
+    <button id="decrypt-btn">Decrypt</button>
+    <span class="decrypted-text">Decrypted text ...</span>
+  </div>
+  
+  <footer>
+    <p>&copy; Encrypt/Decrypt With Symbols</p>
+    <p>Designed and developed by <a href="https://your-website.com" target="_blank">Marshmallow</a></p>
+  </footer>
+
+  <script src="function.js"></script>
+</body>
+</html>

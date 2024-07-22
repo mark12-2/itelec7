@@ -1,0 +1,176 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9; 
+    font-family: Helvetica, Arial, Sans-Serif;
+    color: #333;  
+    transition: background-color 0.5s;
+  }
+  
+  h1, p {
+    width: 100%;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #333;  
+  }
+  
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #666; 
+  }
+  
+  .encrypt, .decrypt {
+    width: 600px;
+    height: 400px;
+    padding: 2rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.1);  
+    box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.25);
+    border-radius: 4px;
+  }
+  
+  .encrypt h2, .decrypt h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;  
+  }
+  
+  .encrypt input, .decrypt input, .decrypted-text, .encrypted-text {
+    width: 75%;
+    font-size: 1.25rem;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 1rem;
+    background: #fff;  
+    color: #333;  
+    border: 1px solid #ccc;  
+  }
+  
+  footer {
+    width: 100vw;
+    margin: 1rem;
+    text-align: center;
+    color: #333;  
+  }
+  
+  footer i:hover, footer.heart:hover {
+    transform: scale(3);
+  }
+  
+  footer i {
+    transition: all 0.5s ease;
+  }
+  
+  footer a {
+    color: #337ab7;  
+    margin: 0 5px;
+  }
+  
+  #encrypt-btn, #decrypt-btn {
+    background-color: #1c838e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  #mode-toggle {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #mode-toggle::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f186"; /* sun icon */
+    color: #337ab7;
+  }
+  
+  body.dark-mode #mode-toggle::before {
+    content: "\f185"; /* moon icon */
+    color: #fff;
+  }
+  
+  body.dark-mode {
+    background-color: #333; 
+    color: #eee;  
+  }
+  
+  body.dark-mode h1, body.dark-mode p {
+    color: #eee;  
+  }
+  
+  body.dark-mode .encrypt, body.dark-mode .decrypt {
+    background: rgba(255,255,255,0.1);  
+    box-shadow: inset 0px 0px 10px 0px rgba(255,255,255,0.25);
+  }
+  
+  body.dark-mode .encrypt h2, body.dark-mode .decrypt h2 {
+    color: #eee;  
+  }
+  
+  body.dark-mode .encrypt input, body.dark-mode .decrypt input {
+    background: #333; 
+    color: #eee;  
+    border: 1px solid #555;  
+  }
+  
+  body.dark-mode footer {
+    color: #eee;  
+  }
+  
+  body.dark-mode footer a {
+    color: #337ab7;  
+  }
+
+
+
+
+  .copy-btn {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .copy-btn:hover {
+    background-color: #23527c;
+  }
+  
+  .copy-btn i {
+    margin-right: 5px;
+  }
+
+  .button {
+    
+    background-color: transparent;
+    border: none;
+   
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--button-color-light);
+        }
+  
+        .dark-mode .button {
+            color: var(--button-color-dark);
+        }
+
