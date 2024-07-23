@@ -12,13 +12,13 @@
 
   <div class="encrypt">
     <h2>Encrypt Text</h2>
-    <div class="input-with-button">
-      <input class="e" type="text" placeholder="Enter Text">  
+      <input class="e" type="text" placeholder="Enter Text"> 
+      <div> 
       <button id="start-speech-recognition" class="button">
         <i class="fas fa-microphone"></i>
-      </button>
-    </div>
+      </button> &nbsp;&nbsp;&nbsp;&nbsp;
     <button id="encrypt-btn">Encrypt</button>
+  </div>
     <span class="encrypted-text">Encrypted text ...</span>
     <button class="copy-btn" data-copy-target=".encrypted-text">
       <i class="fas fa-copy"></i> Copy
@@ -30,6 +30,9 @@
     <input class="d" type="text" placeholder="Enter Text">
     <button id="decrypt-btn">Decrypt</button>
     <span class="decrypted-text">Decrypted text ...</span>
+    <button id="speak-btn" class="button">
+      <i class="fas fa-volume-up"></i> 
+    </button>
   </div>
   
   <footer>
